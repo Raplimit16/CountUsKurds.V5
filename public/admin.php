@@ -1,39 +1,144 @@
 <?php
+/**
+ * Count Us Kurds - Admin Panel Entry
+ */
+
 declare(strict_types=1);
 
-require_once dirname(__DIR__) . '/bootstrap/app.php';
-
-use CountUsKurds\Http\Controllers\AdminController;
-
-// Security headers for admin area
+// Security headers for admin
 header('X-Frame-Options: DENY');
-header('X-Content-Type-Options: nosniff');
-header('X-XSS-Protection: 1; mode=block');
-header('Referrer-Policy: strict-origin-when-cross-origin');
-header('Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()');
-header('Cache-Control: no-cache, no-store, must-revalidate, private');
+header('Cache-Control: no-cache, no-store, must-revalidate');
 header('Pragma: no-cache');
-header('Expires: 0');
 
-// HSTS for HTTPS
-$isHttps = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
-if ($isHttps) {
-    header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
+// Get action
+$action = $_GET['action'] ?? 'dashboard';
+
+// Public admin actions (no auth required)
+$publicActions = ['login', 'login-totp', 'reset-password', 'verify-2fa'];
+
+// Check authentication
+if (!in_array($action, $publicActions) && !$auth->check()) {
+    redirect('/admin?action=login');
 }
 
-// Content Security Policy for admin
-$csp = [
-    "default-src 'self'",
-    "script-src 'self' 'unsafe-inline'",
-    "style-src 'self' 'unsafe-inline'",
-    "img-src 'self' data: https://countuskurds.com",
-    "font-src 'self'",
-    "connect-src 'self'",
-    "frame-ancestors 'none'",
-    "base-uri 'self'",
-    "form-action 'self'",
-];
-header('Content-Security-Policy: ' . implode('; ', $csp));
-
-$controller = new AdminController();
-$controller->handle();
+// Route admin actions
+switch ($action) {
+    // Authentication
+    case 'login':
+        $controller = new App\Controllers\Admin\AuthController($auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->login();
+        } else {
+            $controller->showLogin();
+        }
+        break;
+        
+    case 'login-totp':
+        $controller = new App\Controllers\Admin\AuthController($auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->loginTotp();
+        } else {
+            $controller->showLoginTotp();
+        }
+        break;
+        
+    case 'verify-2fa':
+        $controller = new App\Controllers\Admin\AuthController($auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->verify2fa();
+        } else {
+            $controller->showVerify2fa();
+        }
+        break;
+        
+    case 'reset-password':
+        $controller = new App\Controllers\Admin\AuthController($auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->resetPassword();
+        } else {
+            $controller->showResetPassword();
+        }
+        break;
+        
+    case 'logout':
+        $auth->logout();
+        flash('success', __('logged_out'));
+        redirect('/admin?action=login');
+        break;
+    
+    // Dashboard
+    case 'dashboard':
+        $controller = new App\Controllers\Admin\DashboardController($database, $auth, $config, $locale);
+        $controller->index();
+        break;
+    
+    // Applications
+    case 'applications':
+        $controller = new App\Controllers\Admin\ApplicationController($database, $auth, $config, $locale);
+        $controller->index();
+        break;
+        
+    case 'application-view':
+        $controller = new App\Controllers\Admin\ApplicationController($database, $auth, $config, $locale);
+        $controller->view((int)($_GET['id'] ?? 0));
+        break;
+        
+    case 'application-status':
+        $controller = new App\Controllers\Admin\ApplicationController($database, $auth, $config, $locale);
+        $controller->updateStatus();
+        break;
+        
+    case 'application-delete':
+        $controller = new App\Controllers\Admin\ApplicationController($database, $auth, $config, $locale);
+        $controller->delete((int)($_GET['id'] ?? 0));
+        break;
+        
+    case 'export':
+        $controller = new App\Controllers\Admin\ApplicationController($database, $auth, $config, $locale);
+        $controller->export();
+        break;
+    
+    // Settings
+    case 'settings':
+        $controller = new App\Controllers\Admin\SettingsController($database, $auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->update();
+        } else {
+            $controller->index();
+        }
+        break;
+        
+    case 'change-totp':
+        $controller = new App\Controllers\Admin\SettingsController($database, $auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->changeTotp();
+        } else {
+            $controller->showChangeTotp();
+        }
+        break;
+        
+    case 'change-password':
+        $controller = new App\Controllers\Admin\SettingsController($database, $auth, $config, $locale);
+        if ($method === 'POST') {
+            $controller->changePassword();
+        } else {
+            $controller->showChangePassword();
+        }
+        break;
+    
+    // Statistics
+    case 'statistics':
+        $controller = new App\Controllers\Admin\StatisticsController($database, $auth, $config, $locale);
+        $controller->index();
+        break;
+    
+    // Activity log
+    case 'activity':
+        $controller = new App\Controllers\Admin\ActivityController($database, $auth, $config, $locale);
+        $controller->index();
+        break;
+        
+    default:
+        redirect('/admin?action=dashboard');
+        break;
+}

@@ -1,76 +1,82 @@
 <?php
-declare(strict_types=1);
-
 /**
- * Configuration file for Count Us Kurds PHP application
- * Optimized for standard web hosting environments (PHP 8.3+)
+ * Count Us Kurds - Configuration
  */
 
 return [
-    // Application name
-    'name' => 'Count Us Kurds',
-    
-    // Default language (sv, en, ku, ckb, ar, fa, fr, de, tr)
-    'default_locale' => env('APP_LOCALE', 'sv'),
-    
-    // All supported languages with their display labels and text direction
-    'supported_locales' => [
-        'sv' => [
-            'label' => 'Svenska',
-            'dir' => 'ltr',
-        ],
-        'en' => [
-            'label' => 'English',
-            'dir' => 'ltr',
-        ],
-        'ku' => [
-            'label' => 'Kurdî (Kurmanji)',
-            'dir' => 'ltr',
-        ],
-        'ckb' => [
-            'label' => 'سۆرانی (Sorani)',
-            'dir' => 'rtl',
-        ],
-        'ar' => [
-            'label' => 'العربية (Arabic)',
-            'dir' => 'rtl',
-        ],
-        'tr' => [
-            'label' => 'Türkçe',
-            'dir' => 'ltr',
-        ],
+    // Application
+    'app' => [
+        'name' => 'Count Us Kurds',
+        'url' => getenv('APP_URL') ?: 'https://countuskurds.com',
+        'env' => getenv('APP_ENV') ?: 'production',
+        'debug' => getenv('APP_DEBUG') === 'true',
+        'timezone' => getenv('APP_TIMEZONE') ?: 'Europe/Stockholm',
     ],
     
-    // Security settings
+    // Database
+    'database' => [
+        'host' => getenv('DB_HOST') ?: 'localhost',
+        'port' => getenv('DB_PORT') ?: 3306,
+        'name' => getenv('DB_DATABASE') ?: 'countuskurds',
+        'user' => getenv('DB_USERNAME') ?: 'root',
+        'pass' => getenv('DB_PASSWORD') ?: '',
+        'charset' => 'utf8mb4',
+    ],
+    
+    // Mail
+    'mail' => [
+        'host' => getenv('MAIL_HOST') ?: 'smtp.strato.com',
+        'port' => (int)(getenv('MAIL_PORT') ?: 465),
+        'user' => getenv('MAIL_USERNAME') ?: '',
+        'pass' => getenv('MAIL_PASSWORD') ?: '',
+        'encryption' => getenv('MAIL_ENCRYPTION') ?: 'ssl',
+        'from_address' => getenv('MAIL_FROM_ADDRESS') ?: 'info@countuskurds.com',
+        'from_name' => getenv('MAIL_FROM_NAME') ?: 'Count Us Kurds',
+    ],
+    
+    // Security
     'security' => [
-        // Enable Content Security Policy headers
-        'enable_csp' => true,
-        
-        // Allowed external script sources (for CDN, analytics, etc)
-        'allowed_script_hosts' => [
-            'https://cdn.tailwindcss.com',
-            'https://www.googletagmanager.com',
-        ],
-        
-        // Allowed external style sources (for fonts, CSS CDN, etc)
-        'allowed_style_hosts' => [
-            'https://fonts.googleapis.com',
-        ],
-        
-        // Allowed font sources
-        'allowed_font_hosts' => [
-            'https://fonts.gstatic.com',
-        ],
-
-        // Allowed external connect sources (analytics beacons, APIs)
-        'allowed_connect_hosts' => [
-            'https://www.google-analytics.com',
-            'https://region1.google-analytics.com',
-        ],
-
-        // Allowed external image sources
-        'allowed_img_hosts' => [
-            'https://www.google-analytics.com',
-        ],
+        'session_lifetime' => (int)(getenv('SESSION_LIFETIME') ?: 120) * 60,
+        'rate_limit_max' => (int)(getenv('FORM_RATE_LIMIT_MAX') ?: 5),
+        'rate_limit_window' => (int)(getenv('FORM_RATE_LIMIT_WINDOW') ?: 900),
+        'login_max_attempts' => 5,
+        'login_lockout_time' => 900, // 15 minutes
+    ],
+    
+    // Supported Languages
+    'languages' => [
+        'sv' => ['name' => 'Svenska', 'dir' => 'ltr', 'flag' => '🇸🇪'],
+        'en' => ['name' => 'English', 'dir' => 'ltr', 'flag' => '🇬🇧'],
+        'ku' => ['name' => 'Kurdî (Kurmancî)', 'dir' => 'ltr', 'flag' => '🟢🟡🔴'],
+        'ckb' => ['name' => 'کوردی (سۆرانی)', 'dir' => 'rtl', 'flag' => '🟢🟡🔴'],
+        'ar' => ['name' => 'العربية', 'dir' => 'rtl', 'flag' => '🇸🇦'],
+        'tr' => ['name' => 'Türkçe', 'dir' => 'ltr', 'flag' => '🇹🇷'],
+        'de' => ['name' => 'Deutsch', 'dir' => 'ltr', 'flag' => '🇩🇪'],
+        'fr' => ['name' => 'Français', 'dir' => 'ltr', 'flag' => '🇫🇷'],
+        'es' => ['name' => 'Español', 'dir' => 'ltr', 'flag' => '🇪🇸'],
+        'fi' => ['name' => 'Suomi', 'dir' => 'ltr', 'flag' => '🇫🇮'],
+        'no' => ['name' => 'Norsk', 'dir' => 'ltr', 'flag' => '🇳🇴'],
+        'he' => ['name' => 'עברית', 'dir' => 'rtl', 'flag' => '🇮🇱'],
+        'fa' => ['name' => 'فارسی', 'dir' => 'rtl', 'flag' => '🇮🇷'],
+        'nl' => ['name' => 'Nederlands', 'dir' => 'ltr', 'flag' => '🇳🇱'],
+        'it' => ['name' => 'Italiano', 'dir' => 'ltr', 'flag' => '🇮🇹'],
+        'ru' => ['name' => 'Русский', 'dir' => 'ltr', 'flag' => '🇷🇺'],
+        'da' => ['name' => 'Dansk', 'dir' => 'ltr', 'flag' => '🇩🇰'],
+        'pl' => ['name' => 'Polski', 'dir' => 'ltr', 'flag' => '🇵🇱'],
+        'pt' => ['name' => 'Português', 'dir' => 'ltr', 'flag' => '🇵🇹'],
+    ],
+    
+    // Kurdish Regions
+    'kurdish_regions' => [
+        'bakur' => 'Bakur (North Kurdistan / Turkey)',
+        'bashur' => 'Bashur (South Kurdistan / Iraq)',
+        'rojava' => 'Rojava (West Kurdistan / Syria)',
+        'rojhelat' => 'Rojhelat (East Kurdistan / Iran)',
+        'diaspora' => 'Diaspora',
+    ],
+    
+    // Analytics
+    'analytics' => [
+        'ga_id' => getenv('GA_MEASUREMENT_ID') ?: '',
     ],
 ];
