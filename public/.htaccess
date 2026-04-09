@@ -1,19 +1,66 @@
-# Count Us Kurds - Public .htaccess (safe + host-compatible)
+# Count Us Kurds - Enhanced Security .htaccess
 
+# ===== ERROR DOCUMENTS =====
+ErrorDocument 400 /errors/generic.php
+ErrorDocument 401 /errors/401.php
+ErrorDocument 403 /errors/403.php
+ErrorDocument 404 /errors/404.php
+ErrorDocument 405 /errors/generic.php
+ErrorDocument 419 /errors/419.php
+ErrorDocument 429 /errors/429.php
+ErrorDocument 500 /errors/500.php
+ErrorDocument 502 /errors/generic.php
+ErrorDocument 503 /errors/503.php
+ErrorDocument 504 /errors/generic.php
+
+# ===== URL REWRITING =====
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteBase /
 
-    # Serve existing files/directories directly.
+    # Force HTTPS (uncomment in production)
+    # RewriteCond %{HTTPS} !=on
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Block suspicious request methods
+    RewriteCond %{REQUEST_METHOD} ^(TRACE|DELETE|TRACK|DEBUG|MOVE|PROPFIND) [NC]
+    RewriteRule ^ - [F,L]
+
+    # Block access to hidden files and directories
+    RewriteCond %{REQUEST_URI} "(^|/)\." [NC]
+    RewriteRule ^ - [F,L]
+
+    # Block SQL injection attempts
+    RewriteCond %{QUERY_STRING} (union|select|insert|drop|delete|update|cast|create|char|convert|alter|declare|exec|order|script|truncate|rename|information_schema|table_name) [NC,OR]
+    RewriteCond %{QUERY_STRING} (;|<|>|'|"|\)|%0A|%0D|%22|%27|%3C|%3E|%00) [NC,OR]
+    RewriteCond %{QUERY_STRING} (\.\./) [NC,OR]
+    RewriteCond %{QUERY_STRING} (boot\.ini|etc/passwd|self/environ) [NC,OR]
+    RewriteCond %{QUERY_STRING} (thumbs?(_tele498telerik)?telerik|telerik|telerikWebUI|eval\(|base64_encode|base64_decode) [NC]
+    RewriteRule ^ - [F,L]
+
+    # Block bad bots
+    RewriteCond %{HTTP_USER_AGENT} (havij|sqlmap|nikto|curl|wget|python|java|perl|ruby|libwww|scan|bot|crawl|spider) [NC]
+    RewriteCond %{HTTP_USER_AGENT} !googlebot [NC]
+    RewriteCond %{HTTP_USER_AGENT} !bingbot [NC]
+    RewriteCond %{HTTP_USER_AGENT} !msnbot [NC]
+    RewriteRule ^ - [F,L]
+
+    # Serve existing files/directories directly
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
 
-    # Route everything else through the front controller.
+    # Route API requests
+    RewriteRule ^api/(.*)$ api/index.php [L,QSA]
+
+    # Route everything else through front controller
     RewriteRule ^ index.php [L]
 </IfModule>
 
+# ===== ACCESS CONTROL =====
+
 # Deny access to sensitive files
-<FilesMatch "^(\.env|\.git|\.htaccess|composer\.(json|lock)|package(-lock)?\.json)$">
+<FilesMatch "^(\.env|\.git|\.htaccess|\.htpasswd|composer\.(json|lock)|package(-lock)?\.json|phpunit\.xml|Makefile|README\.md|CHANGELOG\.md|LICENSE|\.editorconfig|\.gitignore)$">
     <IfModule mod_authz_core.c>
         Require all denied
     </IfModule>
@@ -23,35 +70,125 @@
     </IfModule>
 </FilesMatch>
 
-# Security headers
+# Deny access to PHP files in specific directories
+<DirectoryMatch "^/(storage|logs|cache|config|vendor|node_modules)/">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</DirectoryMatch>
+
+# Block access to backup and log files
+<FilesMatch "\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp|old|backup|tmp)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ===== SECURITY HEADERS =====
 <IfModule mod_headers.c>
+    # Prevent MIME type sniffing
     Header always set X-Content-Type-Options "nosniff"
+    
+    # Clickjacking protection
     Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Referrer Policy
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    
+    # Permissions Policy
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+    
+    # Remove server signature
+    Header always unset X-Powered-By
+    Header always unset Server
+    
+    # Prevent caching of sensitive pages
+    <FilesMatch "\.(php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
 </IfModule>
 
-# Compression
+# ===== PHP SETTINGS (if applicable) =====
+<IfModule mod_php.c>
+    php_flag display_errors off
+    php_flag log_errors on
+    php_value error_reporting 32767
+    php_flag expose_php off
+    php_value session.cookie_httponly 1
+    php_value session.cookie_secure 1
+    php_value session.cookie_samesite "Strict"
+    php_value session.use_strict_mode 1
+    php_value session.use_only_cookies 1
+    php_value max_input_vars 1000
+    php_value post_max_size 10M
+    php_value upload_max_filesize 10M
+</IfModule>
+
+# ===== COMPRESSION =====
 <IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml
 </IfModule>
 
-# Browser caching for static assets
+# ===== BROWSER CACHING =====
 <IfModule mod_expires.c>
     ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    
+    # Images
     ExpiresByType image/jpeg "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/webp "access plus 1 year"
     ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS/JS
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
     ExpiresByType font/woff "access plus 1 year"
     ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    
+    # HTML/PHP (no cache)
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType application/xhtml+xml "access plus 0 seconds"
 </IfModule>
+
+# ===== OTHER SECURITY =====
 
 # Disable directory listing
 Options -Indexes
 
+# Disable server signature
+ServerSignature Off
+
 # Default charset
 AddDefaultCharset UTF-8
+
+# Set default language
+DefaultLanguage sv
+
+# Prevent hotlinking (optional - uncomment if needed)
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{HTTP_REFERER} !^$
+#     RewriteCond %{HTTP_REFERER} !^https?://(www\.)?countuskurds\.com [NC]
+#     RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,NC,L]
+# </IfModule>

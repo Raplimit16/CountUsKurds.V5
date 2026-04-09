@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
-$statusTitle = $statusTitle ?? '429 - För många förfrågningar';
-$statusMessage = $statusMessage ?? 'Du har gjort för många försök. Vänta en stund och försök igen.';
+http_response_code(429);
+$statusTitle = '429 - For manga forfragningar';
+$statusMessage = 'Du har gjort for manga forfragan pa kort tid. Vanta nagra minuter och forsok igen.';
 include __DIR__ . '/generic.php';
