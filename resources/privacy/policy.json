@@ -1,0 +1,434 @@
+﻿{
+    "fa":  {
+               "contact":  "اگر در مورد حریم خصوصی یا مالکیت داده سؤالی دارید با ما در info@countuskurds.com تماس بگیرید.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "این خط‌مشی بر هر چیزی که از طریق CountUsKurds.com، رویدادهای مجموعه زنده، و صندوق ورودی info@countuskurds.com ارسال می‌شود، کنترل می‌کند.",
+                                                 "همه سوابق در خدمت ماموریت ما برای مستندسازی، امنیت و تقویت سیاسی کردها در سراسر جهان هستند."
+                                             ],
+                                    "heading":  "ماموریت و محدوده"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "نام کامل، اطلاعات تماس حرفه ای یا سازمانی، و زبان ترجیحی.",
+                                                    "منطقه، موقعیت دیاسپورا، و سیگنال‌های جمعیتی که به ما در تأیید نمایندگی کمک می‌کنند.",
+                                                    "بیانیه های مشارکت فردی، یادداشت های ظرفیت سازمانی، و مراجع بارگذاری شده.",
+                                                    "فراداده فنی (IP، مهر زمانی، دستگاه) مورد نیاز برای بررسی های امنیتی."
+                                                ],
+                                    "intro":  "بسته به فرمی که پر می کنید، ممکن است جمع آوری کنیم:",
+                                    "heading":  "اطلاعاتی که جمع آوری می کنیم"
+                                },
+                                {
+                                    "body":  [
+                                                 "کارکنان هماهنگ کننده مجاز، موارد ارسالی را برای ارزیابی متقاضیان، برنامه ریزی توسعه، طراحی حاکمیت، و حفظ مسیرهای حسابرسی ایمن بررسی می کنند.",
+                                                 "ما سوابق رمزگذاری شده را در مراکز داده اتحادیه اروپا ذخیره می کنیم و آنها را تا پایان مونتاژ پایه و حداقل ده (10) سال پس از آن نگهداری می کنیم، مگر اینکه قانون مدت طولانی تری را ایجاب کند."
+                                             ],
+                                    "heading":  "نحوه استفاده و حفظ داده ها"
+                                },
+                                {
+                                    "body":  [
+                                                 "با ارسال اطلاعات به Count Us Kurds، به ما حقوق غیرقابل برگشت، دائمی، جهانی و بدون حق امتیاز برای استفاده، انطباق، تجزیه و تحلیل، انتشار، ترجمه، یا انتقال همه محتوای ارسالی اعطا می کنید.",
+                                                 "ما ممکن است موارد ارسالی را با سایر مجموعه‌های داده قابل اعتماد ترکیب کنیم، آمار تولید کنیم، یا گزیده‌هایی را با حسابرسان، شرکا یا مشاوران حقوقی به اشتراک بگذاریم و در عین حال به وعده‌های محرمانه‌داری پایبند باشیم."
+                                             ],
+                                    "heading":  "مالکیت و استفاده مجاز"
+                                },
+                                {
+                                    "body":  [
+                                                 "شما می توانید با ارسال ایمیل به info@countuskurds.com از آدرسی که استفاده کرده اید، کپی، تصحیح یا پردازش محدود داده های خود را درخواست کنید.",
+                                                 "ما به سرعت درخواست ها را تایید خواهیم کرد، اما ممکن است اطلاعات لازم برای تحقیقات امنیتی، تعهدات قانونی، یا حفظ یکپارچگی سرشماری کردستان را حفظ کنیم."
+                                             ],
+                                    "heading":  "انتخاب ها و تماس شما"
+                                }
+                            ],
+               "dir":  "rtl",
+               "title":  "حریم خصوصی و سیاست مالکیت داده",
+               "updated_label":  "به روز شد",
+               "language":  "فارسی",
+               "summary":  "Count Us Kurds داده‌های حساس مدنی را جمع‌آوری می‌کند تا اولین سرشماری جهانی تایید شده کردها را بسازد. این خط‌مشی نحوه ذخیره، استفاده و ادعای مالکیت هر ارسالی را توضیح می‌دهد و در عین حال آن را محافظت می‌کند."
+           },
+    "ckb":  {
+                "contact":  "ئەگەر پرسیارت هەیە سەبارەت بە تایبەتمەندی یان خاوەندارێتی زانیارییەکان، پەیوەندیمان پێوە بکە بە info@countuskurds.com.",
+                "sections":  [
+                                 {
+                                     "body":  [
+                                                  "ئەم سیاسەتە هەموو ئەو شتانە بەڕێوەدەبات کە لە ڕێگەی countuskurds.com و ڕووداوەکانی کۆکردنەوەی ڕاستەوخۆ و inbox info@countuskurds.com پێشکەش دەکرێن.",
+                                                  "هەموو تۆمارەکان خزمەت بە ئەرکی ئێمە دەکەن بۆ بەڵگەنامەکردن و دەستەبەرکردن و بەهێزکردنی سیاسی کورد لە سەرانسەری جیهاندا."
+                                              ],
+                                     "heading":  "ئەرک و سکۆپ"
+                                 },
+                                 {
+                                     "bullets":  [
+                                                     "ناوی تەواو، زانیاری پەیوەندی پیشەیی یان ڕێکخراوەیی، و زمانی پەسەندکراو.",
+                                                     "ناوچە، شوێنی ڕەوەند، و سیگناڵە دیمۆگرافییەکان کە یارمەتیدەرمان دەبن لە پشتڕاستکردنەوەی نوێنەرایەتی.",
+                                                     "بەیاننامەی بەشداری تاکەکەسی، تێبینییەکانی توانای ڕێکخراوەیی، و ئاماژە بارکراوەکان.",
+                                                     "میتاداتای تەکنیکی (IP، مۆری کات، ئامێر) پێویستە بۆ پێداچوونەوەی ئاسایش."
+                                                 ],
+                                     "intro":  "بەپێی ئەو فۆرمەی کە تۆ تەواو دەکەیت ڕەنگە ئێمە کۆی بکەینەوە:",
+                                     "heading":  "ئەو زانیاریانەی ئێمە کۆیان دەکەینەوە"
+                                 },
+                                 {
+                                     "body":  [
+                                                  "ستافی هەماهەنگی ڕێگەپێدراو پێداچوونەوە بە پێشکەشکردنی پێشکەشکاران، پلانی گەیاندن، حوکمڕانی دیزاین، و پاراستنی ڕێڕەوی وردبینی پارێزراو.",
+                                                  "ئێمە تۆمارە کۆدکراوەکان لە ناوەندەکانی داتاکانی یەکێتی ئەوروپادا هەڵدەگرین و دەیانهێڵینەوە تاوەکو کۆبوونەوەی دامەزراوەکە تەواو دەبێت و لانیکەم دە (10) ساڵ دوای ئەوە مەگەر یاسا پێویستی بە ماوەیەکی درێژتر نەبێت."
+                                              ],
+                                     "heading":  "چۆن داتا بەکاردەهێنین و دەیهێڵینەوە"
+                                 },
+                                 {
+                                     "body":  [
+                                                  "بە ناردنی زانیاری بۆ ژماردنی کوردەکانی ئەمریکا تۆ مافی بەکارهێنان، خۆگونجاندن، شیکردنەوە، بڵاوکردنەوە، وەرگێڕان، یان گواستنەوەی هەموو ناوەڕۆکە پێشکەشکراوەکانمان پێدەبەخشێت، هەمیشەیی، گونجاندن، شیکردنەوە، بڵاوکردنەوە، وەرگێڕان، یان گواستنەوەی.",
+                                                  "لەوانەیە ئێمە پێشکەشکردنەکان لەگەڵ کۆمەڵە داتا متمانەپێکراوەکانی تردا تێکەڵ بکەین، ئامارەکان دروست بکەین، یان بڕگەیەک لەگەڵ وردبینیکەرەکان، هاوبەشەکان، یان ڕاوێژکارانی یاسایی هاوبەش بکەین لە هەمان کاتدا بەڵێنەکانی نهێنی بەرز بکەینەوە."
+                                              ],
+                                     "heading":  "خاوەندارێتی و بەکارهێنانی ڕێگەپێدراو"
+                                 },
+                                 {
+                                     "body":  [
+                                                  "دەتوانیت داوای کۆپی، ڕاستکردنەوە، یان پرۆسێسکردنی سنوورداری داتاکانت بکەیت بە ئیمەیڵکردنی info@countuskurds.com لەو ناونیشانەی کە بەکاری هێناوە.",
+                                                  "ئێمە بە خێرایی دان بە داواکارییەکاندا دەنێین، بەڵام لەوانەیە ئەو زانیاریانەی کە پێویستن بۆ لێکۆڵینەوە ئەمنییەکان، پابەندبوونە یاساییەکان، یان بۆ پاراستنی یەکپارچەیی سەرژمێری کوردەکان بهێڵینەوە."
+                                              ],
+                                     "heading":  "هەڵبژاردن و پەیوەندیت"
+                                 }
+                             ],
+                "dir":  "rtl",
+                "title":  "سیاسەتی خاوەندارێتی نهێنی و داتا",
+                "updated_label":  "نوێکراوەتەوە",
+                "language":  "کوردی (سۆرانی)",
+                "summary":  "کونت کوردەکان داتای مەدەنی هەستیار کۆدەکاتەوە بۆ بنیاتنانی یەکەم سەرژمێری جیهانی پشتڕاستکراوی کوردی. ئەم سیاسەتە ڕوونی دەکاتەوە کە چۆن ئێمە خاوەندارێتی لەسەر هەموو پێشکەشکردنێک هەڵدەگرین، بەکاری دەهێنین و جەختی لەسەر دەکەینەوە لە هەمان کاتدا بە پارێزراوی دەیهێڵینەوە."
+            },
+    "tr":  {
+               "contact":  "Gizlilik veya veri sahipliğiyle ilgili sorularınız varsa info@countuskurds.com adresinden bize ulaşın.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "Bu politika, CountUsKurds.com, canlı toplama etkinlikleri ve info@countuskurds.com gelen kutusu aracılığıyla gönderilen her şeyi yönetir.",
+                                                 "Tüm kayıtlar dünya çapındaki Kürtleri belgeleme, güvence altına alma ve siyasi olarak güçlendirme misyonumuza hizmet etmektedir."
+                                             ],
+                                    "heading":  "Misyon ve kapsam"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "Tam ad, profesyonel veya kurumsal iletişim bilgileri ve tercih edilen dil.",
+                                                    "Temsili doğrulamamıza yardımcı olan bölge, diaspora konumu ve demografik sinyaller.",
+                                                    "Bireysel katkı beyanları, kurumsal kapasite notları ve yüklenen referanslar.",
+                                                    "Güvenlik incelemeleri için teknik meta veriler (IP, zaman damgası, cihaz) gereklidir."
+                                                ],
+                                    "intro":  "Doldurduğunuz forma bağlı olarak şunları toplayabiliriz:",
+                                    "heading":  "Topladığımız bilgiler"
+                                },
+                                {
+                                    "body":  [
+                                                 "Yetkili koordinasyon personeli, başvuru sahiplerini değerlendirmek, sosyal yardım planlamak, yönetişimi tasarlamak ve güvenli denetim yollarını sürdürmek için gönderimleri inceler.",
+                                                 "Şifrelenmiş kayıtları AB veri merkezlerinde saklıyoruz ve bunları temel montajı tamamlanana kadar ve yasa daha uzun bir süre gerektirmediği sürece en az on (10) yıl boyunca saklıyoruz."
+                                             ],
+                                    "heading":  "Verileri nasıl kullanıyoruz ve saklıyoruz"
+                                },
+                                {
+                                    "body":  [
+                                                 "Count Us Kurds\u0027a bilgi göndererek bize gönderilen tüm içeriği kullanma, uyarlama, analiz etme, yayınlama, tercüme etme veya aktarma konusunda geri alınamaz, kalıcı, dünya çapında, telifsiz haklar vermiş olursunuz.",
+                                                 "Gönderimleri diğer güvenilir veri kümeleriyle birleştirebilir, istatistikler oluşturabilir veya gizlilik vaatlerini yerine getirirken denetçiler, ortaklar veya hukuk danışmanlarıyla alıntıları paylaşabiliriz."
+                                             ],
+                                    "heading":  "Mülkiyet ve izin verilen kullanım"
+                                },
+                                {
+                                    "body":  [
+                                                 "Kullandığınız adresten info@countuskurds.com adresine e-posta göndererek verilerinizin kopyasını, düzeltilmesini veya sınırlı işlenmesini talep edebilirsiniz.",
+                                                 "Talepleri hızlı bir şekilde kabul edeceğiz ancak güvenlik soruşturmaları, yasal yükümlülükler veya Kürt nüfus sayımının bütünlüğünü korumak için gerekli bilgileri saklayabiliriz."
+                                             ],
+                                    "heading":  "Seçimleriniz ve iletişim"
+                                }
+                            ],
+               "dir":  "ltr",
+               "title":  "Gizlilik ve Veri Sahipliği Politikası",
+               "updated_label":  "Güncellendi",
+               "language":  "Türkçe",
+               "summary":  "Count Us Kürts, ilk doğrulanmış küresel Kürt nüfus sayımını oluşturmak için hassas sivil verileri topluyor. Bu politika, her gönderimi korurken aynı zamanda nasıl sakladığımızı, kullandığımızı ve sahipliğini nasıl iddia ettiğimizi açıklamaktadır."
+           },
+    "fr":  {
+               "contact":  "Contactez-nous à info@countuskurds.com si vous avez des questions sur la confidentialité ou la propriété des données.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "Cette politique régit tout ce qui est soumis via CountUsKurds.com, les événements de collecte en direct et la boîte de réception info@countuskurds.com.",
+                                                 "Tous les documents servent notre mission de documenter, sécuriser et renforcer politiquement les Kurdes du monde entier."
+                                             ],
+                                    "heading":  "Mission et portée"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "Nom complet, coordonnées professionnelles ou organisationnelles et langue préférée.",
+                                                    "Région, localisation de la diaspora et signaux démographiques qui nous aident à vérifier la représentation.",
+                                                    "Déclarations de contribution individuelles, notes sur la capacité organisationnelle et références téléchargées.",
+                                                    "Métadonnées techniques (IP, horodatage, appareil) requises pour les examens de sécurité."
+                                                ],
+                                    "intro":  "Selon le formulaire que vous remplissez, nous pouvons collecter :",
+                                    "heading":  "Informations que nous collectons"
+                                },
+                                {
+                                    "body":  [
+                                                 "Le personnel de coordination autorisé examine les soumissions pour évaluer les candidats, planifier la sensibilisation, concevoir la gouvernance et maintenir des pistes d\u0027audit sécurisées.",
+                                                 "Nous stockons les enregistrements cryptés dans les centres de données de l\u0027UE et les conservons jusqu\u0027à ce que l\u0027assemblage des fondations soit terminé et pendant au moins dix (10) ans par la suite, à moins que la loi n\u0027exige une période plus longue."
+                                             ],
+                                    "heading":  "Comment nous utilisons et conservons les données"
+                                },
+                                {
+                                    "body":  [
+                                                 "En envoyant des informations à Count Us Kurds, vous nous accordez le droit irrévocable, perpétuel, mondial et libre de droits d\u0027utiliser, d\u0027adapter, d\u0027analyser, de publier, de traduire ou de transférer tout le contenu soumis.",
+                                                 "Nous pouvons combiner les soumissions avec d\u0027autres ensembles de données fiables, générer des statistiques ou partager des extraits avec des auditeurs, des partenaires ou des conseillers juridiques tout en respectant les promesses de confidentialité."
+                                             ],
+                                    "heading":  "Propriété et utilisation autorisée"
+                                },
+                                {
+                                    "body":  [
+                                                 "Vous pouvez demander une copie, une correction ou un traitement limité de vos données en envoyant un e-mail à info@countuskurds.com à partir de l\u0027adresse que vous avez utilisée.",
+                                                 "Nous accuserons réception des demandes rapidement, mais nous pouvons conserver les informations nécessaires aux enquêtes de sécurité, aux obligations légales ou à la préservation de l\u0027intégrité du recensement kurde."
+                                             ],
+                                    "heading":  "Vos choix et contact"
+                                }
+                            ],
+               "dir":  "ltr",
+               "title":  "Politique de confidentialité et de propriété des données",
+               "updated_label":  "Mis à jour",
+               "language":  "Français",
+               "summary":  "Count Us Kurds collecte des données civiques sensibles pour créer le premier recensement kurde mondial vérifié. Cette politique explique comment nous stockons, utilisons et revendiquons la propriété de chaque soumission tout en la protégeant."
+           },
+    "sv":  {
+               "contact":  "Kontakta oss på info@countuskurds.com om du har frågor om integritet eller dataägande.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "Denna policy reglerar allt som skickas via CountUsKurds.com, liveinsamlingsevenemang och inkorgen info@countuskurds.com.",
+                                                 "Alla register tjänar vårt uppdrag att dokumentera, säkra och politiskt stärka kurder över hela världen."
+                                             ],
+                                    "heading":  "Uppdrag och omfattning"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "Fullständigt namn, professionella eller organisatoriska kontaktuppgifter och föredraget språk.",
+                                                    "Region, diasporaplats och demografiska signaler som hjälper oss att verifiera representation.",
+                                                    "Uttalanden om individuella bidrag, anteckningar om organisationskapacitet och uppladdade referenser.",
+                                                    "Teknisk metadata (IP, tidsstämpel, enhet) krävs för säkerhetsgranskningar."
+                                                ],
+                                    "intro":  "Beroende på vilket formulär du fyller i kan vi samla in:",
+                                    "heading":  "Information vi samlar in"
+                                },
+                                {
+                                    "body":  [
+                                                 "Auktoriserad samordningspersonal granskar inlämningar för att utvärdera sökande, planera uppsökande verksamhet, utforma styrning och upprätthålla säkra revisionsspår.",
+                                                 "Vi lagrar krypterade register i EU-datacenter och behåller dem tills stiftelsen är klar och i minst tio (10) år efteråt om inte lagen kräver en längre period."
+                                             ],
+                                    "heading":  "Hur vi använder och behåller data"
+                                },
+                                {
+                                    "body":  [
+                                                 "Genom att skicka information till Count Us Kurds ger du oss oåterkalleliga, eviga, världsomspännande, royaltyfria rättigheter att använda, anpassa, analysera, publicera, översätta eller överföra allt insänt innehåll.",
+                                                 "Vi kan kombinera bidrag med andra betrodda datauppsättningar, generera statistik eller dela utdrag med revisorer, partners eller juridiska rådgivare samtidigt som vi upprätthåller sekretesslöften."
+                                             ],
+                                    "heading":  "Äganderätt och tillåten användning"
+                                },
+                                {
+                                    "body":  [
+                                                 "Du kan begära en kopia, rättelse eller begränsad behandling av dina uppgifter genom att maila info@countuskurds.com från den adress du använde.",
+                                                 "Vi kommer snabbt att bekräfta förfrågningar, men vi kan behålla information som är nödvändig för säkerhetsutredningar, juridiska skyldigheter eller för att bevara integriteten hos den kurdiska folkräkningen."
+                                             ],
+                                    "heading":  "Dina val och kontakt"
+                                }
+                            ],
+               "dir":  "ltr",
+               "title":  "Sekretess- och dataägandepolicy",
+               "updated_label":  "Uppdaterad",
+               "language":  "Svenska",
+               "summary":  "Räkna oss kurder samlar in känsliga civila data för att bygga den första verifierade globala kurdiska folkräkningen. Den här policyn förklarar hur vi lagrar, använder och hävdar äganderätt över varje inlämning samtidigt som vi håller dem skyddade."
+           },
+    "de":  {
+               "contact":  "Kontaktieren Sie uns unter info@countuskurds.com, wenn Sie Fragen zum Datenschutz oder zum Dateneigentum haben.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "Diese Richtlinie gilt für alles, was über CountUsKurds.com, Live-Sammelveranstaltungen und den Posteingang info@countuskurds.com eingereicht wird.",
+                                                 "Alle Aufzeichnungen dienen unserer Mission, Kurden weltweit zu dokumentieren, zu sichern und politisch zu stärken."
+                                             ],
+                                    "heading":  "Mission und Umfang"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "Vollständiger Name, berufliche oder organisatorische Kontaktdaten und bevorzugte Sprache.",
+                                                    "Region, Diaspora-Standort und demografische Signale, die uns helfen, die Repräsentation zu überprüfen.",
+                                                    "Individuelle Beitragserklärungen, Hinweise zur organisatorischen Kapazität und hochgeladene Referenzen.",
+                                                    "Technische Metadaten (IP, Zeitstempel, Gerät), die für Sicherheitsüberprüfungen erforderlich sind."
+                                                ],
+                                    "intro":  "Je nachdem, welches Formular Sie ausfüllen, erfassen wir möglicherweise Folgendes:",
+                                    "heading":  "Informationen, die wir sammeln"
+                                },
+                                {
+                                    "body":  [
+                                                 "Autorisierte Koordinierungsmitarbeiter prüfen die Einreichungen, um Bewerber zu bewerten, die Kontaktaufnahme zu planen, die Governance zu entwerfen und sichere Prüfpfade zu pflegen.",
+                                                 "Wir speichern verschlüsselte Aufzeichnungen in EU-Rechenzentren und bewahren sie bis zum Abschluss der Gründungsversammlung und mindestens zehn (10) Jahre danach auf, es sei denn, das Gesetz schreibt einen längeren Zeitraum vor."
+                                             ],
+                                    "heading":  "Wie wir Daten verwenden und speichern"
+                                },
+                                {
+                                    "body":  [
+                                                 "Indem Sie Informationen an Count Us Kurds senden, gewähren Sie uns unwiderrufliche, unbefristete, weltweite, gebührenfreie Rechte zur Nutzung, Anpassung, Analyse, Veröffentlichung, Übersetzung oder Übertragung aller übermittelten Inhalte.",
+                                                 "Wir können Einsendungen mit anderen vertrauenswürdigen Datensätzen kombinieren, Statistiken erstellen oder Auszüge mit Wirtschaftsprüfern, Partnern oder Rechtsberatern teilen und dabei die Vertraulichkeitsversprechen einhalten."
+                                             ],
+                                    "heading":  "Eigentum und erlaubte Nutzung"
+                                },
+                                {
+                                    "body":  [
+                                                 "Sie können eine Kopie, Korrektur oder eingeschränkte Verarbeitung Ihrer Daten anfordern, indem Sie eine E-Mail an info@countuskurds.com von der von Ihnen verwendeten Adresse senden.",
+                                                 "Wir werden Anfragen schnell beantworten, können jedoch Informationen aufbewahren, die für Sicherheitsuntersuchungen, rechtliche Verpflichtungen oder zur Wahrung der Integrität der kurdischen Volkszählung erforderlich sind."
+                                             ],
+                                    "heading":  "Ihre Auswahl und Kontakt"
+                                }
+                            ],
+               "dir":  "ltr",
+               "title":  "Datenschutz- und Dateneigentumsrichtlinie",
+               "updated_label":  "Aktualisiert",
+               "language":  "Deutsch",
+               "summary":  "Count Us Kurds sammelt sensible Bürgerdaten, um die erste verifizierte globale kurdische Volkszählung zu erstellen. In dieser Richtlinie wird erläutert, wie wir jede Einsendung speichern, verwenden und das Eigentum daran geltend machen und sie gleichzeitig schützen."
+           },
+    "en":  {
+               "contact":  "Contact us at info@countuskurds.com if you have questions about privacy or data ownership.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "This policy governs everything submitted through CountUsKurds.com, live collection events, and the inbox info@countuskurds.com.",
+                                                 "All records serve our mission to document, secure, and politically strengthen Kurds worldwide."
+                                             ],
+                                    "heading":  "Mission and scope"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "Full name, professional or organisational contact details, and preferred language.",
+                                                    "Region, diaspora location, and demographic signals that help us verify representation.",
+                                                    "Individual contribution statements, organisational capacity notes, and uploaded references.",
+                                                    "Technical metadata (IP, timestamp, device) required for security reviews."
+                                                ],
+                                    "intro":  "Depending on the form you complete we may collect:",
+                                    "heading":  "Information we collect"
+                                },
+                                {
+                                    "body":  [
+                                                 "Authorised coordination staff review submissions to evaluate applicants, plan outreach, design governance, and maintain secure audit trails.",
+                                                 "We store encrypted records in EU data centres and retain them until the foundation assembly is complete and for at least ten (10) years afterward unless law requires a longer period."
+                                             ],
+                                    "heading":  "How we use and retain data"
+                                },
+                                {
+                                    "body":  [
+                                                 "By sending information to Count Us Kurds you grant us irrevocable, perpetual, worldwide, royalty-free rights to use, adapt, analyse, publish, translate, or transfer all submitted content.",
+                                                 "We may combine submissions with other trusted datasets, generate statistics, or share excerpts with auditors, partners, or legal advisors while upholding confidentiality promises."
+                                             ],
+                                    "heading":  "Ownership and permitted use"
+                                },
+                                {
+                                    "body":  [
+                                                 "You may request a copy, correction, or limited processing of your data by emailing info@countuskurds.com from the address you used.",
+                                                 "We will acknowledge requests quickly, but we may retain information necessary for security investigations, legal obligations, or to preserve the integrity of the Kurdish census."
+                                             ],
+                                    "heading":  "Your choices and contact"
+                                }
+                            ],
+               "dir":  "ltr",
+               "title":  "Privacy \u0026 Data Ownership Policy",
+               "updated_label":  "Updated",
+               "language":  "English",
+               "summary":  "Count Us Kurds collects sensitive civic data to build the first verified global Kurdish census. This policy explains how we store, use, and assert ownership over every submission while keeping it protected."
+           },
+    "ku":  {
+               "contact":  "Ger pirsên we di derbarê nepenîtî an xwedîtiya daneyê de hebin bi me re têkilî daynin info@countuskurds.com.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "Ev polîtîka her tiştê ku bi rêya CountUsKurds.com, bûyerên berhevkirina zindî, û inbox info@countuskurds.com ve hatî şandin birêve dibe.",
+                                                 "Hemû tomar xizmeta mîsyona me ya belgekirin, ewlekarî û xurtkirina Kurdan li seranserê cîhanê dike."
+                                             ],
+                                    "heading":  "Mîsyon û çarçoveya"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "Navê tevahî, hûrguliyên têkiliya pîşeyî an rêxistinî, û zimanê bijartî.",
+                                                    "Herêm, cîhê dîasporayê, û sînyalên demografîk ên ku ji me re dibin alîkar ku nûnertiyê rast bikin.",
+                                                    "Daxuyaniyên beşdariya kesane, notên kapasîteya rêxistinê, û referansên barkirî.",
+                                                    "Metadata teknîkî (IP, demjimêr, cîhaz) ji bo vekolînên ewlehiyê hewce ne."
+                                                ],
+                                    "intro":  "Li gorî forma ku hûn tije dikin em dikarin berhev bikin:",
+                                    "heading":  "Agahiyên ku em berhev dikin"
+                                },
+                                {
+                                    "body":  [
+                                                 "Karmendên koordînasyonê yên rayedar radestan dinirxînin da ku serlêderan binirxînin, plansaz bikin, rêvebirinê sêwiran bikin, û şopên kontrolê yên ewle biparêzin.",
+                                                 "Em tomarên şîfrekirî li navendên daneyê yên Yekîtiya Ewropî hilînin û wan diparêzin heya ku meclîsa bingehîn biqede û bi kêmî ve deh (10) sal şûnda heya ku qanûn demek dirêjtir hewce neke."
+                                             ],
+                                    "heading":  "Em çawa daneyan bikar tînin û digirin"
+                                },
+                                {
+                                    "body":  [
+                                                 "Bi şandina agahiyê ji Count Us Kurds re hûn mafên nevegerandî, domdar, li çaraliyê cîhanê, bê xaniyan didin me ku em hemî naveroka hatî şandin bikar bînin, biguncînin, analîz bikin, çap bikin, wergerînin, an veguhezînin.",
+                                                 "Dibe ku em radestan bi danehevên pêbawer ên din re bikin yek, statîstîkan çêkin, an dema ku sozên nepenîtiyê diparêzin, jêderan bi auditor, hevkar, an şêwirmendên dadrêsî re parve bikin."
+                                             ],
+                                    "heading":  "Xwedîbûn û karanîna destûr"
+                                },
+                                {
+                                    "body":  [
+                                                 "Hûn dikarin ji navnîşana ku we bikar aniye bi e-nameyê info@countuskurds.com kopiyek, rastkirin, an pêvajoyek sînorkirî ya daneyên xwe bixwazin.",
+                                                 "Em ê daxwazan zû bipejirînin, lê dibe ku em agahdariya ku ji bo vekolînên ewlehiyê, berpirsiyariyên qanûnî, an ji bo parastina yekitiya serjimêriya kurdî hewce ne, biparêzin."
+                                             ],
+                                    "heading":  "Hilbijartin û têkiliya we"
+                                }
+                            ],
+               "dir":  "ltr",
+               "title":  "Siyaseta Taybetmendî û Xwedîtiya Daneyê",
+               "updated_label":  "Nûkirin",
+               "language":  "Kurdî (Kurmanji)",
+               "summary":  "Count Us Kurds daneyên hemwelatî yên hesas berhev dike da ku yekem serjimêriya kurdî ya cîhanî ya piştrastkirî ava bike. Ev polîtîka rave dike ku em çawa diparêzin, bikar tînin, û xwedîtiyê li ser her radestkirinê diparêzin dema ku ew parastî ye."
+           },
+    "ar":  {
+               "contact":  "اتصل بنا على info@countuskurds.com إذا كانت لديك أسئلة حول الخصوصية أو ملكية البيانات.",
+               "sections":  [
+                                {
+                                    "body":  [
+                                                 "تحكم هذه السياسة كل ما يتم إرساله من خلال CountUsKurds.com، وأحداث التجميع المباشر، والبريد الوارد info@countuskurds.com.",
+                                                 "تخدم جميع السجلات مهمتنا في توثيق وتأمين وتعزيز الأكراد سياسيًا في جميع أنحاء العالم."
+                                             ],
+                                    "heading":  "المهمة والنطاق"
+                                },
+                                {
+                                    "bullets":  [
+                                                    "الاسم الكامل وتفاصيل الاتصال المهنية أو التنظيمية واللغة المفضلة.",
+                                                    "المنطقة وموقع الشتات والإشارات الديموغرافية التي تساعدنا على التحقق من التمثيل.",
+                                                    "بيانات المساهمة الفردية، ومذكرات القدرات التنظيمية، والمراجع التي تم تحميلها.",
+                                                    "البيانات التعريفية الفنية (IP، الطابع الزمني، الجهاز) مطلوبة لمراجعات الأمان."
+                                                ],
+                                    "intro":  "اعتمادًا على النموذج الذي تكمله، قد نقوم بجمع:",
+                                    "heading":  "المعلومات التي نجمعها"
+                                },
+                                {
+                                    "body":  [
+                                                 "يقوم موظفو التنسيق المعتمدون بمراجعة الطلبات المقدمة لتقييم المتقدمين، وتخطيط التواصل، وتصميم الحوكمة، والحفاظ على مسارات تدقيق آمنة.",
+                                                 "نقوم بتخزين السجلات المشفرة في مراكز بيانات الاتحاد الأوروبي والاحتفاظ بها حتى اكتمال التجميع الأساسي ولمدة عشر (10) سنوات على الأقل بعد ذلك ما لم يتطلب القانون فترة أطول."
+                                             ],
+                                    "heading":  "كيف نستخدم البيانات ونحتفظ بها"
+                                },
+                                {
+                                    "body":  [
+                                                 "من خلال إرسال المعلومات إلى Count Us Brotherhood، فإنك تمنحنا حقوقًا غير قابلة للإلغاء ودائمة وعالمية وخالية من حقوق الملكية لاستخدام جميع المحتويات المقدمة أو تكييفها أو تحليلها أو نشرها أو ترجمتها أو نقلها.",
+                                                 "يجوز لنا دمج التقديمات مع مجموعات بيانات أخرى موثوقة، أو إنشاء إحصائيات، أو مشاركة مقتطفات مع المدققين، أو الشركاء، أو المستشارين القانونيين مع الحفاظ على وعود السرية."
+                                             ],
+                                    "heading":  "الملكية والاستخدام المسموح به"
+                                },
+                                {
+                                    "body":  [
+                                                 "يمكنك طلب نسخة أو تصحيح أو معالجة محدودة لبياناتك عن طريق إرسال بريد إلكتروني إلى info@countuskurds.com من العنوان الذي استخدمته.",
+                                                 "سنستقبل الطلبات بسرعة، ولكن قد نحتفظ بالمعلومات اللازمة للتحقيقات الأمنية أو الالتزامات القانونية أو للحفاظ على سلامة التعداد السكاني الكردي."
+                                             ],
+                                    "heading":  "اختياراتك والاتصال"
+                                }
+                            ],
+               "dir":  "rtl",
+               "title":  "سياسة الخصوصية وملكية البيانات",
+               "updated_label":  "تم التحديث",
+               "language":  "العربية",
+               "summary":  "تقوم منظمة Count Us الكردية بجمع بيانات مدنية حساسة لبناء أول تعداد كردي عالمي تم التحقق منه. تشرح هذه السياسة كيفية قيامنا بتخزين واستخدام وتأكيد الملكية على كل إرسال مع الحفاظ على حمايته."
+           }
+}

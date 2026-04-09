@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-active-lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Count Us Kurds – Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 2.5rem 1.5rem 4.5rem;
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(180deg, #f4f6fb 0%, #f6f8fc 40%, #fdfefe 100%);
+            color: #1f2933;
+            line-height: 1.7;
+        }
+        .page-shell {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .page-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            border-radius: 1.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+            backdrop-filter: blur(14px);
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: .75rem;
+            text-decoration: none;
+            color: inherit;
+        }
+        .brand img {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            object-fit: cover;
+            background: #fff;
+            padding: .3rem;
+            box-shadow: 0 12px 26px rgba(15, 23, 42, 0.25);
+        }
+        .brand span {
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+        .language-switcher {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+        }
+        .language-switcher label {
+            font-weight: 600;
+            color: #52606d;
+        }
+        select {
+            border-radius: 999px;
+            border: 1px solid #d0d7e2;
+            padding: .45rem 1.4rem .45rem .85rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #fff;
+            color: #111827;
+            appearance: none;
+            cursor: pointer;
+            min-width: 170px;
+        }
+        main {
+            margin-top: 2rem;
+            background: #fff;
+            border-radius: 1.75rem;
+            padding: clamp(2rem, 4vw, 3.25rem);
+            box-shadow: 0 35px 80px rgba(15, 23, 42, 0.14);
+        }
+        .policy {
+            margin: 0;
+        }
+        .policy[hidden] {
+            display: none !important;
+        }
+        h1, h2 {
+            color: #0f172a;
+            line-height: 1.3;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: clamp(2rem, 4vw, 2.6rem);
+        }
+        h2 {
+            margin-top: 2.75rem;
+            font-size: clamp(1.35rem, 3vw, 1.7rem);
+        }
+        ul {
+            padding-left: 1.4rem;
+        }
+        li + li {
+            margin-top: .45rem;
+        }
+        .meta {
+            font-size: .95rem;
+            color: #52606d;
+            margin-bottom: 1.5rem;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #ed1c24;
+        }
+        a {
+            color: #ed1c24;
+        }
+        .policy-note {
+            margin: 1rem 0 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 1rem;
+            background: #fff4f4;
+            border-left: 4px solid #ed1c24;
+            color: #7a1214;
+            font-weight: 600;
+        }
+        .language-fab {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            border-radius: 999px;
+            border: 0;
+            background: linear-gradient(145deg, #111827, #1f2937);
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 180ms ease, box-shadow 180ms ease;
+            z-index: 50;
+        }
+        .language-fab__icon {
+            display: inline-flex;
+        }
+        .language-fab__icon svg {
+            width: 24px;
+            height: 24px;
+        }
+        .language-fab:hover,
+        .language-fab:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 25px 50px rgba(15, 23, 42, 0.28);
+        }
+        .language-overlay {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 200ms ease, visibility 200ms ease;
+            z-index: 40;
+        }
+        .language-overlay.is-visible {
+            visibility: visible;
+            opacity: 1;
+        }
+        .language-overlay__backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(6px);
+        }
+        .language-overlay__panel {
+            position: relative;
+            width: min(500px, calc(100% - 2rem));
+            background: #fff;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 35px 80px rgba(15, 23, 42, 0.3);
+            z-index: 1;
+        }
+        .language-overlay__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .language-overlay__close {
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            padding: .3rem;
+        }
+        .language-overlay__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+        }
+        .language-overlay__list button {
+            width: 100%;
+            border-radius: 1rem;
+            border: 1px solid #d0d7e2;
+            background: #f8fafc;
+            color: #111827;
+            font-weight: 600;
+            padding: .85rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: border 180ms ease, background 180ms ease, color 180ms ease;
+        }
+        .language-overlay__list button.is-active {
+            border-color: rgba(237, 28, 36, 0.6);
+            background: rgba(237, 28, 36, 0.08);
+            color: #ed1c24;
+        }
+        .language-overlay__list button:hover,
+        .language-overlay__list button:focus-visible {
+            border-color: rgba(237, 28, 36, 0.45);
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        body.language-overlay-open {
+            overflow: hidden;
+        }
+        @media (max-width: 640px) {
+            .page-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            select {
+                width: 100%;
+            }
+            .language-switcher--desktop {
+                width: 100%;
+            }
+        }
+        @media (min-width: 641px) {
+            .language-fab {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="page-header">
+            <a class="brand" href="/">
+                <img src="./img/count-us-kurds-logo.png" alt="Count Us Kurds">
+                <span>Count Us Kurds</span>
+            </a>
+            <div class="language-switcher language-switcher--desktop">
+                <label for="language-select">Språk / Language</label>
+                <select id="language-select" name="lang" aria-label="Change language">
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                    <option value="ku">Kurdî (Kurmanji)</option>
+                    <option value="ckb">سۆرانی</option>
+                    <option value="ar">العربية</option>
+                    <option value="fa">فارسی</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="policy-container" data-policy-container>
+                <article class="policy" data-lang-block="sv">
+                    <h1>Integritetspolicy för Count Us Kurds</h1>
+                    <p class="meta">Senast uppdaterad: 7 november 2025</p>
+
+                    <p>
+                        Count Us Kurds (&ldquo;vi&rdquo;, &ldquo;oss&rdquo; eller &ldquo;organisationen&rdquo;) verkar för att samla, mobilisera och företräda kurdiska röster.
+                        Denna integritetspolicy beskriver hur vi samlar in, använder, analyserar, lagrar och skyddar personuppgifter som lämnas via vår webbplats
+                        och våra ansökningsformulär. Genom att använda någon av våra tjänster godkänner du villkoren nedan.
+                    </p>
+
+                    <h2>1. Ansvarig för behandlingen</h2>
+                    <p>
+                        Count Us Kurds är personuppgiftsansvarig. Vi nås via <a href="mailto:info@countuskurds.com">info@countuskurds.com</a>.
+                        All hantering av data sker i enlighet med EU:s dataskyddsförordning (GDPR), kompletterande svensk lagstiftning såsom
+                        dataskyddslagen (2018:218) samt övrig tillämplig svensk rätt.
+                    </p>
+
+                    <h2>2. Vilka uppgifter vi samlar in</h2>
+                    <p>Vi samlar in all information som lämnas till oss, inklusive men inte begränsat till:</p>
+                    <ul>
+                        <li>Identitetsuppgifter (namn, födelsedata, nationell tillhörighet).</li>
+                        <li>Kontaktuppgifter (adress, telefonnummer, e-post, sociala konton).</li>
+                        <li>Organisations- eller gruppinformation vid kollektiv registrering.</li>
+                        <li>Geografisk region och relevanta preferenser.</li>
+                        <li>Kompletterande metadata, fritextsvar och bilagor som skickas till oss.</li>
+                    </ul>
+                    <p>
+                        Vi kan även samla in teknisk information (loggar, tidsstämplar, IP-adresser, enhetstyp) för säkerhet, spårbarhet och analys.
+                    </p>
+
+                    <h2>3. Hur vi använder och behåller uppgifterna</h2>
+                    <p>
+                        Vi förbehåller oss rätten att använda, bearbeta, analysera, kombinera och bevara all information som kommer in via denna plattform.
+                        Uppgifterna används bland annat för att:
+                    </p>
+                    <ul>
+                        <li>Validera identitet och medlemskap i vår rörelse.</li>
+                        <li>Planera representation, kampanjer och kommunikation.</li>
+                        <li>Uppfylla juridiska förpliktelser och säkerställa efterlevnad.</li>
+                        <li>Skydda organisationens legitima intressen och säkerhetsbehov.</li>
+                    </ul>
+                    <p>
+                        Vi behåller uppgifterna så länge som krävs för ändamålen ovan eller så länge svensk lag tillåter/kräver.
+                        Detta inkluderar rätten att lagra information på obestämd tid om det är motiverat av arkivering, spårbarhet,
+                        säkerhet eller avtalsrättsliga krav.
+                    </p>
+
+                    <h2>4. Rättslig grund</h2>
+                    <p>
+                        Behandlingen baseras på vårt <span class="highlight">berättigade intresse</span> att bygga och försvara en representativ rörelse,
+                        samt på samtycke när du frivilligt lämnar uppgifter. Vi kan även behandla information för att uppfylla rättsliga skyldigheter
+                        enligt svensk lagstiftning eller för att skydda vitala intressen.
+                    </p>
+
+                    <h2>5. Delning av uppgifter</h2>
+                    <p>
+                        Vi kan dela personuppgifter med följande kategorier av mottagare:
+                    </p>
+                    <ul>
+                        <li>Interna team och rådgivande organ inom Count Us Kurds.</li>
+                        <li>Betrodda leverantörer som hjälper oss med drift, säkerhet, analys eller kommunikation.</li>
+                        <li>Juridiska rådgivare, myndigheter eller domstolar när det krävs enligt lag eller för att skydda våra rättigheter.</li>
+                    </ul>
+                    <p>
+                        Alla mottagare omfattas av sekretess- och säkerhetskrav samt relevanta bestämmelser i svensk lag.
+                    </p>
+
+                    <h2>6. Överföringar utanför EU/EES</h2>
+                    <p>
+                        Om vi överför personuppgifter till länder utanför EU/EES säkerställer vi att lämpliga skyddsåtgärder finns,
+                        till exempel standardavtalsklausuler eller andra erkända mekanismer enligt GDPR.
+                    </p>
+
+                    <h2>7. Dina rättigheter</h2>
+                    <p>
+                        I enlighet med svensk lag och GDPR har du rätt att:
+                    </p>
+                    <ul>
+                        <li>Begära tillgång till de personuppgifter vi lagrar.</li>
+                        <li>Rätta felaktiga eller ofullständiga uppgifter.</li>
+                        <li>Invända mot viss behandling eller begära begränsning.</li>
+                        <li>Begära radering där det är möjligt enligt lag.</li>
+                        <li>Få ut data i ett portabelt format.</li>
+                        <li>Lämna klagomål till Integritetsskyddsmyndigheten (IMY).</li>
+                    </ul>
+                    <p>
+                        Kontakta oss på <a href="mailto:info@countuskurds.com">info@countuskurds.com</a> för att utöva dina rättigheter.
+                    </p>
+
+                    <h2>8. Informationssäkerhet</h2>
+                    <p>
+                        Vi använder tekniska och organisatoriska säkerhetsåtgärder (kryptering, åtkomstkontroller, loggning och kontinuerlig övervakning)
+                        för att skydda dina uppgifter mot obehörig åtkomst, förlust eller manipulation. Trots detta kan ingen digital överföring garanteras
+                        vara helt riskfri.
+                    </p>
+
+                    <h2>9. Ändringar i policyn</h2>
+                    <p>
+                        Vi kan när som helst uppdatera denna integritetspolicy. Den senaste versionen publiceras alltid på den här sidan
+                        och gäller från det datumet. Fortsatt användning av våra tjänster efter ändring innebär att du accepterar den uppdaterade policyn.
+                    </p>
+
+                    <h2>10. Kontakt</h2>
+                    <p>
+                        Vid frågor om denna policy eller vår datahantering, mejla <a href="mailto:info@countuskurds.com">info@countuskurds.com</a>.
+                    </p>
+                </article>
+                <article class="policy" data-lang-block="en" hidden>
+                    <h1>Count Us Kurds – Privacy Policy</h1>
+                    <p class="meta">Last updated: 7 November 2025</p>
+
+                    <p>
+                        Count Us Kurds (&ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;the organisation&rdquo;) exists to organise, mobilise and represent Kurdish voices.
+                        This privacy policy explains how we collect, use, analyse, store and protect personal data submitted through our website
+                        and online application forms. By using any of our services you agree to the terms below.
+                    </p>
+
+                    <h2>1. Controller</h2>
+                    <p>
+                        Count Us Kurds is the data controller. Contact us at <a href="mailto:info@countuskurds.com">info@countuskurds.com</a>.
+                        All processing is carried out in accordance with the EU General Data Protection Regulation (GDPR),
+                        the Swedish Data Protection Act (2018:218) and other applicable Swedish legislation.
+                    </p>
+
+                    <h2>2. Data we collect</h2>
+                    <p>We collect all information submitted to us, including but not limited to:</p>
+                    <ul>
+                        <li>Identity data (name, date of birth, national affiliation).</li>
+                        <li>Contact data (address, phone number, email, social accounts).</li>
+                        <li>Organisation or group details for collective registrations.</li>
+                        <li>Geographic region and relevant preferences.</li>
+                        <li>Additional metadata, free-text answers and attachments provided to us.</li>
+                    </ul>
+                    <p>
+                        We may also collect technical information (logs, timestamps, IP addresses, device type) for security, traceability and analytics.
+                    </p>
+
+                    <h2>3. How we use and retain the data</h2>
+                    <p>
+                        We reserve the right to use, process, analyse, combine and retain all information submitted through this platform.
+                        The data is used to:
+                    </p>
+                    <ul>
+                        <li>Validate identity and participation in our movement.</li>
+                        <li>Plan representation, campaigns and communications.</li>
+                        <li>Meet legal obligations and ensure compliance.</li>
+                        <li>Protect the organisation’s legitimate interests and security requirements.</li>
+                    </ul>
+                    <p>
+                        We retain information for as long as necessary for these purposes or as long as Swedish law permits or requires.
+                        This includes the right to store information indefinitely when justified for archiving, traceability,
+                        security or contractual reasons.
+                    </p>
+
+                    <h2>4. Legal basis</h2>
+                    <p>
+                        Processing is based on our <span class="highlight">legitimate interest</span> in building and defending a representative movement,
+                        as well as on your consent when you voluntarily provide information. We may also process data to fulfil legal obligations
+                        under Swedish law or to protect vital interests.
+                    </p>
+
+                    <h2>5. Sharing of data</h2>
+                    <p>
+                        We may share personal data with the following categories of recipients:
+                    </p>
+                    <ul>
+                        <li>Internal teams and advisory bodies within Count Us Kurds.</li>
+                        <li>Trusted vendors supporting us with operations, security, analytics or communications.</li>
+                        <li>Legal counsel, public authorities or courts when required by law or to protect our rights.</li>
+                    </ul>
+                    <p>
+                        All recipients are bound by confidentiality, security requirements and relevant provisions of Swedish law.
+                    </p>
+
+                    <h2>6. Transfers outside the EU/EEA</h2>
+                    <p>
+                        When transferring personal data to countries outside the EU/EEA we ensure adequate safeguards,
+                        such as EU standard contractual clauses or other mechanisms recognised under the GDPR.
+                    </p>
+
+                    <h2>7. Your rights</h2>
+                    <p>
+                        Under Swedish law and the GDPR you have the right to:
+                    </p>
+                    <ul>
+                        <li>Request access to the personal data we store.</li>
+                        <li>Correct inaccurate or incomplete information.</li>
+                        <li>Object to certain processing or request restriction.</li>
+                        <li>Request deletion where allowed by law.</li>
+                        <li>Receive your data in a portable format.</li>
+                        <li>Lodge complaints with the Swedish Authority for Privacy Protection (IMY).</li>
+                    </ul>
+                    <p>
+                        Contact <a href="mailto:info@countuskurds.com">info@countuskurds.com</a> to exercise your rights.
+                    </p>
+
+                    <h2>8. Information security</h2>
+                    <p>
+                        We apply technical and organisational safeguards (encryption, access controls, logging and continuous monitoring)
+                        to protect your information against unauthorised access, loss or manipulation. No digital transfer can, however, be guaranteed
+                        to be completely risk-free.
+                    </p>
+
+                    <h2>9. Changes to this policy</h2>
+                    <p>
+                        We may update this privacy policy at any time. The latest version is always published on this page
+                        and takes effect on the stated date. Continued use of our services after a change means you accept the updated policy.
+                    </p>
+
+                    <h2>10. Contact</h2>
+                    <p>
+                        For questions about this policy or our data practices, email <a href="mailto:info@countuskurds.com">info@countuskurds.com</a>.
+                    </p>
+                </article>
+            </div>
+        </main>
+    </div>
+    <button
+        class="language-fab"
+        type="button"
+        aria-controls="language-overlay"
+        aria-expanded="false"
+        data-lang-toggle
+    >
+        <span class="language-fab__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M3 12h18"></path>
+                <path d="M12 3a15.3 15.3 0 0 1 4 9 15.3 15.3 0 0 1-4 9 15.3 15.3 0 0 1-4-9 15.3 15.3 0 0 1 4-9Z"></path>
+            </svg>
+        </span>
+        <span class="sr-only">Change language</span>
+    </button>
+
+    <div class="language-overlay" data-lang-overlay aria-hidden="true">
+        <div class="language-overlay__backdrop" data-lang-close></div>
+        <div class="language-overlay__panel" role="dialog" aria-modal="true" aria-label="Language">
+            <div class="language-overlay__header">
+                <p>Language</p>
+                <button type="button" class="language-overlay__close" data-lang-close aria-label="Close language menu">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="language-overlay__list" id="language-overlay-list"></ul>
+        </div>
+    </div>
+    <script>
+        (() => {
+            const LANGUAGES = [
+                { code: 'en', label: 'English', native: 'English', dir: 'ltr', title: 'Count Us Kurds – Privacy Policy' },
+                { code: 'sv', label: 'Svenska', native: 'Svenska', dir: 'ltr', title: 'Count Us Kurds – Integritetspolicy' },
+                { code: 'ku', label: 'Kurdî (Kurmanji)', native: 'Kurdî (Kurmanji)', dir: 'ltr', fallback: 'en', note: 'Nîşe: Ev siyaseta taybetiyê hîn tenê bi Îngilîzî berdest e. Wergerrên Kurdî dê di nêz de werin zêdekirin.', title: 'Count Us Kurds – Rêvebirina Taybetî' },
+                { code: 'ckb', label: 'سۆرانی', native: 'سۆرانی', dir: 'rtl', fallback: 'en', note: 'تێبینی: ئەم سیاسەتی تایبەتییە ئێستا تەنیا بە ئینگلیزی بەردەستە. وەرگێڕانی کوردیی باشووری زوو زیاد دەکرێت.', title: 'Count Us Kurds – سیاسەتی تایبەتی' },
+                { code: 'ar', label: 'العربية', native: 'العربية', dir: 'rtl', fallback: 'en', note: 'ملاحظة: سياسة الخصوصية متاحة حالياً باللغة الإنجليزية فقط. سنضيف الترجمة العربية قريباً.', title: 'Count Us Kurds – سياسة الخصوصية' },
+                { code: 'fa', label: 'فارسی', native: 'فارسی', dir: 'rtl', fallback: 'en', note: 'توجه: این سیاست حریم خصوصی فعلاً فقط به زبان انگلیسی ارائه شده است. ترجمه فارسی به‌زودی اضافه می‌شود.', title: 'Count Us Kurds – سیاست حریم خصوصی' },
+                { code: 'fr', label: 'Français', native: 'Français', dir: 'ltr', fallback: 'en', note: 'Remarque : cette politique de confidentialité n’est disponible qu’en anglais pour le moment. Une version française arrive bientôt.', title: 'Count Us Kurds – Politique de confidentialité' },
+                { code: 'de', label: 'Deutsch', native: 'Deutsch', dir: 'ltr', fallback: 'en', note: 'Hinweis: Diese Datenschutzerklärung ist derzeit nur auf Englisch verfügbar. Eine deutsche Übersetzung folgt in Kürze.', title: 'Count Us Kurds – Datenschutzerklärung' },
+                { code: 'tr', label: 'Türkçe', native: 'Türkçe', dir: 'ltr', fallback: 'en', note: 'Not: Bu gizlilik politikası şimdilik yalnızca İngilizce olarak sunuluyor. Türkçe çeviri yakında eklenecek.', title: 'Count Us Kurds – Gizlilik Politikası' },
+            ];
+
+            const html = document.documentElement;
+            const body = document.body;
+            const select = document.getElementById('language-select');
+            const overlay = document.querySelector('[data-lang-overlay]');
+            const overlayList = document.getElementById('language-overlay-list');
+            const fab = document.querySelector('[data-lang-toggle]');
+            const overlayClosers = document.querySelectorAll('[data-lang-close]');
+            const container = document.querySelector('[data-policy-container]');
+            const params = new URLSearchParams(window.location.search);
+
+            const articles = new Map();
+            container.querySelectorAll('[data-lang-block]').forEach((article) => {
+                articles.set(article.dataset.langBlock, article);
+            });
+
+            const ensureArticle = (code) => {
+                if (articles.has(code)) {
+                    return articles.get(code);
+                }
+                const lang = LANGUAGES.find((item) => item.code === code);
+                const fallbackCode = lang?.fallback ?? 'en';
+                const sourceArticle = ensureArticle(fallbackCode);
+                const clone = sourceArticle.cloneNode(true);
+                clone.dataset.langBlock = code;
+                clone.hidden = true;
+                clone.setAttribute('dir', lang?.dir ?? 'ltr');
+                const heading = clone.querySelector('h1');
+                if (heading && lang?.title) {
+                    heading.textContent = lang.title;
+                }
+                const existingNote = clone.querySelector('.policy-note');
+                if (lang?.note) {
+                    const note = existingNote ?? document.createElement('div');
+                    note.className = 'policy-note';
+                    note.textContent = lang.note;
+                    if (!existingNote) {
+                        const reference = clone.querySelector('.meta');
+                        clone.insertBefore(note, reference ?? clone.firstChild);
+                    }
+                } else if (existingNote) {
+                    existingNote.remove();
+                }
+                container.appendChild(clone);
+                articles.set(code, clone);
+                return clone;
+            };
+
+            const populateOverlay = () => {
+                overlayList.innerHTML = '';
+                LANGUAGES.forEach((lang) => {
+                    const li = document.createElement('li');
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.dataset.lang = lang.code;
+                    button.innerHTML = `<span>${lang.label}</span><span>${lang.native}</span>`;
+                    button.addEventListener('click', () => {
+                        setLanguage(lang.code);
+                        toggleOverlay(false);
+                    });
+                    li.appendChild(button);
+                    overlayList.appendChild(li);
+                });
+            };
+
+            const setActiveState = (code) => {
+                overlayList.querySelectorAll('button').forEach((btn) => {
+                    btn.classList.toggle('is-active', btn.dataset.lang === code);
+                });
+            };
+
+            const toggleOverlay = (open) => {
+                if (!overlay) return;
+                overlay.classList.toggle('is-visible', open);
+                overlay.setAttribute('aria-hidden', String(!open));
+                if (fab) {
+                    fab.setAttribute('aria-expanded', String(open));
+                }
+                body.classList.toggle('language-overlay-open', open);
+                if (open) {
+                    (overlay.querySelector('button.is-active') ?? overlay.querySelector('button'))?.focus();
+                } else if (fab) {
+                    fab.focus();
+                }
+            };
+
+            const normalizeLang = (value) => {
+                if (!value) return null;
+                const lower = value.toLowerCase();
+                if (LANGUAGES.some((item) => item.code === lower)) {
+                    return lower;
+                }
+                const short = lower.slice(0, 2);
+                const match = LANGUAGES.find((item) => item.code === short);
+                return match ? match.code : null;
+            };
+
+            const detectInitialLanguage = () => {
+                return normalizeLang(params.get('lang'))
+                    ?? normalizeLang(navigator.language)
+                    ?? LANGUAGES[0].code;
+            };
+
+            const setLanguage = (code, { skipHistory = false } = {}) => {
+                const lang = LANGUAGES.find((item) => item.code === code) ?? LANGUAGES[0];
+                const target = ensureArticle(lang.code);
+                articles.forEach((article) => {
+                    article.hidden = article !== target;
+                });
+                html.lang = lang.code;
+                html.dir = lang.dir ?? 'ltr';
+                document.title = lang.title ?? LANGUAGES[0].title;
+                if (select) {
+                    select.value = lang.code;
+                }
+                setActiveState(lang.code);
+                if (!skipHistory) {
+                    params.set('lang', lang.code);
+                    const query = params.toString();
+                    const newUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+                    window.history.replaceState({}, '', newUrl);
+                }
+            };
+
+            const initialLang = detectInitialLanguage();
+            populateOverlay();
+            setLanguage(initialLang, { skipHistory: Boolean(params.get('lang')) });
+
+            if (select) {
+                select.value = initialLang;
+                select.addEventListener('change', (event) => {
+                    setLanguage(event.target.value);
+                });
+            }
+
+            fab?.addEventListener('click', () => {
+                toggleOverlay(!overlay.classList.contains('is-visible'));
+            });
+            overlayClosers.forEach((el) => el.addEventListener('click', () => toggleOverlay(false)));
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && overlay.classList.contains('is-visible')) {
+                    toggleOverlay(false);
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
